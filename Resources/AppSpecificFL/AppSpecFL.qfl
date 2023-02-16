@@ -10,7 +10,7 @@ End Function
 '===========================================================================================================================
 '=====================================( Function to register to Tricentis Demo Web shop )=============================================
 '==========================================================================================================================
-'Succceful Registration code
+'application should allow user to do successful registration
 Function fnRegister
 	Browser("name:=Demo Web Shop").Page("title:=Demo Web Shop").Link("name:=Register").fnWebLink
 	 Browser("name:=Demo Web Shop. Register").Page("title:=Demo Web Shop. Register").WebEdit("html id:=FirstName").WaitProperty "visible", True, 10000
